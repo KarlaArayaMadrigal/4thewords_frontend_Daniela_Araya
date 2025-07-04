@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import Header from "./assets/views/Header";
-import Banner from "./assets/views/Banner";
+import Header from "./assets/components/Header";
+import Banner from "./assets/components/Banner";
 
 const GlobalStyle = createGlobalStyle`
   * {

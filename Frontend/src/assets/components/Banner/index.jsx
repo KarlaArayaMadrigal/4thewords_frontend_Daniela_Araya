@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Contenido = styled.div`
   background-color: #000;
   width: 100%;
-  aspect-ratio: 6 / 1;
+  aspect-ratio: 3 / 1;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -36,12 +36,11 @@ const Texto = styled.h2`
 
 const Banner = () => {
   const images = [
-    "/img/cadejos.jpg",
-    "/img/padre.jpg",
-    "/img/mona.jpg",
-     "/img/monja.jpg",
-    "/img/micomalo.jpg",
-    "/img/LaSegua.jpg",
+    "/img/banner.jpg",
+    "/img/banner2.jpg",
+    "/img/banner3.jpg",
+    "/img/banner4.jpg",
+    "/img/banner5.jpg",
   ];
 
   const [index, setIndex] = useState(0);
