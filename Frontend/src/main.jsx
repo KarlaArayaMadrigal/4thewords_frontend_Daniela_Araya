@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import App from './App';
 import Login from './assets/views/Login';
+import Leyendas from './assets/views/Leyendas';
 
 const root = document.getElementById('root');
 
@@ -13,6 +14,7 @@ createRoot(root).render(
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<App />} />
+        <Route path="/leyendas" element={<Leyendas />} />
       </Routes>
     </Router>
   </StrictMode>

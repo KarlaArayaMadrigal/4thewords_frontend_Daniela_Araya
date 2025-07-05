@@ -37,7 +37,7 @@ const NavLink = styled(Link)`
 const Navbar = () => {
   return (
     <Nav>
-      <NavLink to="/">Inicio</NavLink>
+      <NavLink to="/home">Inicio</NavLink>
       <NavLink to="/leyendas">Leyendas</NavLink>
       <NavLink to="/lugares">Lugares</NavLink>
       <NavLink to="/contacto">Contacto</NavLink>

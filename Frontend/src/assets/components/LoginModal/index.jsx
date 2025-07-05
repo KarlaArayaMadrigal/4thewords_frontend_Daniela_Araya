@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Button from "../Button";
 
 const ModalOverlay = styled.div`
   position: fixed;
@@ -34,24 +35,6 @@ const Input = styled.input`
   border-radius: 6px;
 `;
 
-const Button = styled.button`
-  width: 100%;
-  padding: 0.75rem;
-  background-color: #007bff;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  &:hover {
-    background-color: #0056b3;
-  }
-`;
-
-const Error = styled.p`
-  color: red;
-  margin-bottom: 1rem;
-`;
 
 const LoginModal = ({ onClose, onLogin }) => {
   const [correo, setCorreo] = useState("");
@@ -105,6 +88,7 @@ const LoginModal = ({ onClose, onLogin }) => {
           value={contrasena}
           onChange={(e) => setContrasena(e.target.value)}
         />
+      
         <Button onClick={handleLogin}>Iniciar sesión</Button>
       </ModalContent>
     </ModalOverlay>

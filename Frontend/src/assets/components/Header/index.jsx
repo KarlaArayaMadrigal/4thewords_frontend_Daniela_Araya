@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import BarraNavegacion from "../Navbar";
+import Button from "../Button";
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Are+You+Serious&family=Mystery+Quest&display=swap');
@@ -22,7 +23,7 @@ const Contenido = styled.div`
   padding: 0 40px;
 `;
 
-const Izquierda = styled.div`
+const Distintivo = styled.div`
   display: flex;
   align-items: center;
 `;
@@ -41,6 +42,8 @@ const Logo = styled.div`
 
 const Titulo = styled.h3`
   font-family: "Mystery Quest", cursive;
+  display: flex;
+  align-items: center;
   font-size: 40px;
   color: white;
   margin-left: 20px;
@@ -51,7 +54,7 @@ const Header = () => {
     <div>
       <GlobalStyle />
       <Contenido>
-        <Izquierda>
+        <Distintivo>
           <Logo>
             <img
               src="/img/logo.png"
@@ -60,7 +63,8 @@ const Header = () => {
             />
           </Logo>
           <Titulo>Leyendas CR</Titulo>
-        </Izquierda>
+        </Distintivo>
+          <Button/>
         <BarraNavegacion />
       </Contenido>
     </div>
